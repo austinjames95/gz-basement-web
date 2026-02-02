@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GZ Photos - Underground Arts & Culture at RPI</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+  </head>
+  <body>
+    <div class="main">
+        <div class="display_image">
+            <div class="numbertext">1 / 8</div>
+            <img src="" style="width:100%" id="pic">
+         </div>
+    </div>
+
+<script>
+    $.ajax({
+      url: "/event_photos/ActionPainters",
+      success: function(data){
+         $(data).find("a:contains(.jpg)").each(function(){
+            // will loop through 
+            var images = $(this).attr("href");
+
+            $('<p></p>').html(images).appendTo('#pic')
+
+         });
+      }
+    });
+</script>
+      
+</body>
+      <center><p><img src="/images/ConfettiMLP.gif" style="width:75px"></p></center>
+</html>

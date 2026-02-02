@@ -1,0 +1,447 @@
+BODY {
+    font-family:arial, helvetica; 
+    font-size: 14px; 
+    background-color: black;
+    background-image:url('/images/blackBG.jpg'); 
+    color: white;
+}
+
+img {
+    border:none;
+}
+
+B { 
+    font-weight:bold;
+}
+
+h2 { 
+    font-size: 18px; 
+    font-weight:bold;
+}
+
+hr {
+    border:solid #ddd; 
+    border-width:1px 0 0; 
+    height:0;
+}
+hr.news_divider {
+    border:solid #333; 
+    border-width:1px 0 0; 
+    height:0;}
+
+a, a:visited {
+    color: #0cfac1; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fa1eb1; 
+    text-decoration: none;
+}
+
+a.navlink, a.navlink:visited {
+    color: white; 
+    text-decoration:none;
+}
+a.navlink:hover {
+    color:#999999;
+}
+
+
+div {
+    padding:.4cm; 
+    padding-top:.1cm; 
+    background-color: black; 
+    width:274px; 
+    top: 0px; 
+    margin-bottom:15px;
+}
+
+.main {
+    background: none; 
+    width: 825px; 
+    margin:auto;
+}
+body > .main {
+    background: none; 
+    width: 825px; 
+    margin:auto; 
+    overflow: hidden;
+}
+
+.main_section { 
+    width: 465px; 
+    position:relative; 
+    float:left; 
+    top:0px; 
+    overflow: hidden;
+}
+
+.admin_section { 
+    width:795px; 
+    position:relative; 
+    float:left; 
+    top:0px; 
+}
+
+.about, .booking, .upload, .socials, .events, .members_only, .event_select, .join, .main_section, .admin_section, .directions, .nav, #nav_home { 
+    border: 3px groove #CCC; 
+    border-radius: 5px;
+}
+
+.event_listings{
+    margin:0;
+    padding:0; 
+    width: 270px;
+}
+.event_bottom{
+    clear:both;
+    margin: 0;
+    padding:0;
+    height: 15px;
+}
+
+.logo {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    width: 150px;
+    & img {
+        width: 95%;
+        filter: drop-shadow(0px 0px 5px black);
+    }
+}
+
+.sidebar{
+    padding:0; 
+    background:none; 
+    top: 0px; 
+    position:relative; 
+    float:right; 
+    width: 310px;
+}
+
+#nav_home {
+    padding: 0; 
+    width: 825px; 
+    height: 300px; 
+    float: left; 
+    background-image:url(/images/front_images/GZ_11-19-2023.png);
+}
+
+.nav {
+    padding: 0; 
+    width: 825px; 
+    height: 150px;
+    overflow: hidden;
+}
+
+.nav_text {
+    background-color: black; 
+    font-size: 16px; 
+    padding: 3px 10px 0 0; 
+    border:none; 
+    position:relative; 
+    left: 0px; 
+    top:60px; 
+    width: 485px; 
+    height:16px; 
+    text-align:right; 
+    line-height: 80%;
+}
+
+.nav_text_other {
+    background:black; 
+    font-size: 16px; 
+    padding: 3px 10px 0 0; 
+    border:none; 
+    position:relative; 
+    left: 0px; 
+    top:94px; 
+    width: 815px; 
+    height:16px; 
+    text-align:right; 
+    line-height: 80%;
+}
+
+/*-- ABOUT.HTML --*/
+    .socials img {
+        width: 100px;
+    }
+/*-- ABOUT.HTML END --*/
+
+/*-- EVENTS.HTML --*/
+.events_listing { 
+    width:450px; 
+    padding:10px;
+}
+
+.event_date {
+    vertical-align:top; 
+    padding-right:10px;
+    padding-top:20px; 
+    font-weight:bold;
+    width:65px; 
+    margin-left:10px; 
+    float:left; 
+    white-space: nowrap; 
+    font-size: 14px; 
+}
+
+.event_show {
+    vertical-align:top; 
+    padding-bottom:20px; 
+    padding-top:20px; 
+    float: left;
+    border-left: 1px solid #EBEBEB; 
+    width: 330px;
+}
+
+.mini_event_date {margin:0; padding: 0; white-space: nowrap; vertical-align: top; float: left; font-weight:bold; width: 80px;}
+.mini_event_show {margin:0; padding: 0; padding-left: 10px; padding-bottom: 15px; font-size: 12px; font-weight: bold; float: left; font-weight:bold; width: 150px; }
+.mini_admission {font-size: 10px; font-weight: normal;}
+
+.separator {
+    border-top: 4px double #ccc; 
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0; 
+    clear: both;
+}
+
+.year_header {
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.headliner {
+    display: inline-block;
+    font-size:28px; 
+    font-weight:bold;
+    margin-bottom: 10px;
+}
+.mini_headliner {font-size: 18px; font-weight: bold;}
+
+.opener { font-size:18px; font-weight:bold; }
+.mini_opener {font-size: 12px;}
+
+.red_pluses {color:#CC0033; font-weight:bold;}
+/*-- EVENTS.HTML END --*/
+
+.white_pluses { 
+    color: white; 
+    font-weight:bold;
+}
+
+div.form_label {padding: 0; margin: 0; font-weight: bold; width: 120px; float: left; padding: 4px;}
+
+div.form_field {padding: 0; margin: 0; width: 500px; float: left;}
+
+br.clear {clear: both;}
+
+/*-- PEOPLE.HTML --*/
+.officer_name {
+    float: left; 
+    width: 45%; 
+    padding: 0 5px 3px 5px; 
+    margin:0;
+    margin-bottom: 3px;
+    clear: both;
+    font-weight: bold;
+}
+
+.officer_position {
+    float: left; 
+    width: 45%; 
+    padding: 0 5px 3px 5px; 
+    margin:0;
+}
+
+.officer_email {
+    float: left; 
+    width: 30%; 
+    padding: 0 5px 3px 5px;
+    margin:0;
+}
+
+.officer_header{
+    width: 190px; 
+    text-align: center; 
+    font-weight:bold;
+    padding: 0 20px 0 0; 
+    margin:0;
+    float:left;
+}
+/*-- PEOPLE.HTML END --*/
+ 
+span.news_header {font-weight: bold; font-size: 16px;}
+
+span.success_message {color: #339900; font-style:italic; font-weight: bold;}
+
+ul.bandlist {list-style: none; padding-left: 20px;}
+
+/*-- PHOTOS.HTML --*/
+    div.photo_set_name {
+        float:left; 
+        width: 220px; 
+        padding: 0; 
+        margin: 0;
+        color: #0cfac1; 
+    }
+    div.photo_set_name:hover {
+        color: #fa1eb1; 
+    }
+    span.photo_set_date {
+        padding: 0; 
+        color: white;
+    }
+
+    div.event_desc {
+        font-weight: normal; 
+        padding: 0; 
+        margin: 0;
+        text-align: left; 
+        width: 460px; 
+        font-size: 12px;
+}
+
+    .details_container {
+        background-color: none;
+        background: none;
+        padding-bottom: 20px;
+    }
+
+    details {
+        margin-bottom: 15px;
+    }
+
+      details summary { 
+        cursor: pointer;
+      }
+
+    summary {
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .photo_container {
+        position: relative;
+        width: 100%;
+        margin-left: -15px;
+    }
+
+    /* Hide the images by default */
+    .display_image {
+        display: none;
+        width: 90%;
+        margin-left: 7px;
+        & img {
+            border: 3px double #2b2b2b;
+        }
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 150px;
+      width: auto;
+      color: #0cfac1;
+      font-weight: bold;
+      font-size: 30px;
+      user-select: none;
+      -webkit-user-select: none;
+        text-align: center;
+    }
+
+    .prev {
+        left: 5px;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 5px;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, change color */
+    .prev:hover,
+    .next:hover {
+      color: #fa1eb1;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 5px;
+        background: none;
+    }
+    
+    .row {
+        width: 90%;
+        margin-left: 7px;
+        background-color: #0a0a0a;
+        border: 2px solid #242424;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column {
+        width: 10%;
+        background-color: #0a0a0a;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        & img {
+            margin: 7px;
+        }
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .thumbnail {
+        opacity: 0.5;
+        border: 2px solid #242424;
+    }
+
+    .active,
+    .thumbnail:hover {
+      opacity: 1;
+    }
+        
+    .photo_set_name.on {
+      color: #fa1eb1; 
+    }
+/*-- PHOTOS.HTML END --*/
+
+div.past_band_header{width: 350px; text-align: center; font-weight:bold;padding: 0 20px 0 0; margin:0;float:left;}
+
+div.poster_upload_column {float: left;text-align: center;height: 290px; margin:0; padding: 0;}
+
+div.prev_news_nav{text-align: left;width: 232px;float:left;margin:0;padding:0;}
+div.next_news_nav{text-align: right;width: 232px;float:left;margin:0;padding:0;}
+
+
+.admin_link {font-weight: bold; font-size: 14px;}
