@@ -133,6 +133,9 @@ body > .main {
 }
 
 .nav {
+    position: sticky; 
+    top: 0; 
+    z-index: 50;
     padding: 0; 
     width: 825px; 
     height: 150px;
